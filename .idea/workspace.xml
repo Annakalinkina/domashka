@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23d0ca0b-b555-447f-a72a-6ffa7443bc72" name="Changes" comment="домашка 6">
+      <change afterPath="$PROJECT_DIR$/06K_lesson/test_01_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06K_lesson/test_02_calc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06K_lesson/test_03_shop.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Annakalinkina&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Annakalinkina/domashka.git&quot;,
+    &quot;accountId&quot;: &quot;cc18c552-6a89-44e3-9bb5-99c914460c80&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xuruJ8rLUFchdQSKVpfqWWHm5S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_string_utils.TestStringUtils.test_count_vowels.executor": "Run",
+    "Python tests.Python tests for test_string_utils.TestStringUtils.test_is_palindrome.executor": "Run",
+    "Python tests.Python tests for test_string_utils.TestStringUtils.test_to_uppercase.executor": "Run",
+    "Python tests.Python tests in test_string_utils.py.executor": "Run",
+    "Python tests.pytest for test_01_form.test_form_validation.executor": "Run",
+    "Python.address.executor": "Run",
+    "Python.lesson05_task4.py..executor": "Run",
+    "Python.lesson_1_task_1.executor": "Run",
+    "Python.lesson_1_task_2.executor": "Run",
+    "Python.lesson_1_task_3.executor": "Run",
+    "Python.lesson_1_task_4.executor": "Run",
+    "Python.lesson_1_task_5.executor": "Run",
+    "Python.lesson_2_task_1.executor": "Run",
+    "Python.lesson_2_task_2.executor": "Run",
+    "Python.lesson_2_task_3.executor": "Run",
+    "Python.lesson_2_task_4.executor": "Run",
+    "Python.lesson_2_task_5.executor": "Run",
+    "Python.lesson_2_task_6.executor": "Run",
+    "Python.lesson_2_task_7.executor": "Run",
+    "Python.lesson_3_task_1.executor": "Run",
+    "Python.lesson_3_task_2.executor": "Run",
+    "Python.lesson_3_task_3.executor": "Run",
+    "Python.lesson_5_task1.executor": "Run",
+    "Python.lesson_5_task2.executor": "Run",
+    "Python.lesson_5_task3.executor": "Run",
+    "Python.lesson_6-task2.executor": "Run",
+    "Python.lesson_6_task1.executor": "Run",
+    "Python.lesson_6_task3.executor": "Run",
+    "Python.mailing.executor": "Run",
+    "Python.smartphone.executor": "Run",
+    "Python.string_utils.executor": "Run",
+    "Python.user.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lesson6",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python tests.pytest for test_01_form.test_form_validation">
+    <configuration name="Python tests for test_string_utils.TestStringUtils.test_count_vowels" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="domashka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_lesson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_string_utils.TestStringUtils.test_count_vowels&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_string_utils.TestStringUtils.test_is_palindrome" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="domashka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_lesson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_string_utils.TestStringUtils.test_is_palindrome&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_string_utils.TestStringUtils.test_to_uppercase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="domashka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_lesson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_string_utils.TestStringUtils.test_to_uppercase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in C:/Users/annak/PycharmProjects/domashka/04_lesson/test_string_utils.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="domashka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_lesson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/04_lesson/test_string_utils.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_01_form.test_form_validation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="domashka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06K_lesson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_01_form.test_form_validation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_01_form.test_form_validation" />
+        <item itemvalue="Python tests.Python tests in C:/Users/annak/PycharmProjects/domashka/04_lesson/test_string_utils.py" />
+        <item itemvalue="Python tests.Python tests for test_string_utils.TestStringUtils.test_count_vowels" />
+        <item itemvalue="Python tests.Python tests for test_string_utils.TestStringUtils.test_to_uppercase" />
+        <item itemvalue="Python tests.Python tests for test_string_utils.TestStringUtils.test_is_palindrome" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23d0ca0b-b555-447f-a72a-6ffa7443bc72" name="Changes" comment="" />
+      <created>1748799021231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748799021231</updated>
+    </task>
+    <task id="LOCAL-00001" summary="домашка 1">
+      <option name="closed" value="true" />
+      <created>1748803291926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748803291926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="домашка 1">
+      <option name="closed" value="true" />
+      <created>1748968612254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748968612254</updated>
+    </task>
+    <task id="LOCAL-00003" summary="домашка 1">
+      <option name="closed" value="true" />
+      <created>1748968760402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748968760402</updated>
+    </task>
+    <task id="LOCAL-00004" summary="домашка 1">
+      <option name="closed" value="true" />
+      <created>1748968775005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748968775005</updated>
+    </task>
+    <task id="LOCAL-00005" summary="домашка 3">
+      <option name="closed" value="true" />
+      <created>1749136669795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749136669795</updated>
+    </task>
+    <task id="LOCAL-00006" summary="домашка 4">
+      <option name="closed" value="true" />
+      <created>1750272768081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750272768081</updated>
+    </task>
+    <task id="LOCAL-00007" summary="домашка 4">
+      <option name="closed" value="true" />
+      <created>1750578847418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750578847418</updated>
+    </task>
+    <task id="LOCAL-00008" summary="домашка 4">
+      <option name="closed" value="true" />
+      <created>1751090509056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751090509057</updated>
+    </task>
+    <task id="LOCAL-00009" summary="домашка 6">
+      <option name="closed" value="true" />
+      <created>1751094655441</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751094655442</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="домашка 1" />
+    <MESSAGE value="домашка 2" />
+    <MESSAGE value="домашка 3" />
+    <MESSAGE value="домашка 4" />
+    <MESSAGE value="домашка 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="домашка 6" />
+  </component>
+</project>

@@ -5,46 +5,55 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def browser():
-    driver = webdriver.Chrome()
+
+    driver = webdriver.Firefox()
     yield driver
     driver.quit()
 
 
-def test_shopping_cart_total(browser):
+def test_shopping_cart(browser):
 
     browser.get("https://www.saucedemo.com/")
 
-    browser.find_element(By.ID, "user-name").send_keys("standard_user")
-    browser.find_element(By.ID, "password").send_keys("secret_sauce")
-    browser.find_element(By.ID, "login-button").click()
+
+    username_field = browser.find_element(By.CSS_SELECTOR, "#user-name")
+    password_field = browser.find_element(By.CSS_SELECTOR, "#password")
+    login_button = browser.find_element(By.CSS_SELECTOR, "#login-button")
+
+    username_field.send_keys("standard_user")
+    password_field.send_keys("secret_sauce")
+    login_button.click()
 
 
-    items_to_add = [
-        "Sauce Labs Backpack",
-        "Sauce Labs Bolt T-Shirt",
-        "Sauce Labs Onesie"
-    ]
-
-    for item_name in items_to_add:
-        item_xpath = f"//div[text()='{item_name}']/ancestor::div[@class='inventory_item']//button"
-        browser.find_element(By.XPATH, item_xpath).click()
+    browser.find_element(By.XPATH, "//div[text()='Sauce Labs Backpack']//following-sibling::button").click()
+    browser.find_element(By.XPATH, "//div[text()='Sauce Labs Bolt T-Shirt']//following-sibling::button").click()
+    browser.find_element(By.XPATH, "//div[text()='Sauce Labs Onesie']//following-sibling::button").click()
 
 
-    browser.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+    cart_button = browser.find_element(By.CSS_SELECTOR, ".shopping_cart_link")
+    cart_button.click()
 
 
-    browser.find_element(By.ID, "checkout").click()
+    checkout_button = browser.find_element(By.CSS_SELECTOR, "#checkout")
+    checkout_button.click()
 
 
-    browser.find_element(By.ID, "first-name").send_keys("Иван")
-    browser.find_element(By.ID, "last-name").send_keys("Петров")
-    browser.find_element(By.ID, "postal-code").send_keys("123456")
-    browser.find_element(By.ID, "continue").click()
+    first_name_field = browser.find_element(By.CSS_SELECTOR, "#first-name")
+    last_name_field = browser.find_element(By.CSS_SELECTOR, "#last-name")
+    postal_code_field = browser.find_element(By.CSS_SELECTOR, "#postal-code")
+    continue_button = browser.find_element(By.CSS_SELECTOR, "#continue")
 
-    total_element = browser.find_element(By.CLASS_NAME, "summary_total_label")
+    first_name_field.send_keys("Иван")
+    last_name_field.send_keys("Петров")
+    postal_code_field.send_keys("12345")
+    continue_button.click()
+
+    total_element = WebDriverWait(browser, 10).until(
+        EC.visibility_of_element_located((By.CSS_SELECTOR, ".summary_total_label"))
+    )
+
+
     total_text = total_element.text
-
-
-    assert total_text == "Total: $58.29", f"Ожидалась сумма $58.29, но получено {total_text}"
+    assert total_text == "Total: $58.29", f"Expected total to be $58.29, but got {total_text}"

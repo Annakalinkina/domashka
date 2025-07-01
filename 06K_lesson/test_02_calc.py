@@ -1,39 +1,42 @@
-import time
-import unittest
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
-class CalculatorTest(unittest.TestCase):
-    def setUp(self):
+@pytest.fixture(scope="module")
+def browser():
 
-        self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(10)
-
-    def test_calculator_addition(self):
-
-        self.driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
+    driver = webdriver.Chrome()
+    yield driver
+    driver.quit()
 
 
-        delay_input = self.driver.find_element(By.CSS_SELECTOR, "#delay")
-        delay_input.send_keys("45")
+def test_calculator_addition(browser):
+
+    browser.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
 
 
-        self.driver.find_element(By.CSS_SELECTOR, "button[value='7']").click()
-        self.driver.find_element(By.CSS_SELECTOR, "button[value='+']").click()
-        self.driver.find_element(By.CSS_SELECTOR, "button[value='8']").click()
-        self.driver.find_element(By.CSS_SELECTOR, "button[value='='").click()
+    delay_input = browser.find_element(By.CSS_SELECTOR, "#delay")
+    delay_input.send_keys("45")
 
 
-        time.sleep(50)
+    browser.find_element(By.CSS_SELECTOR, "button[value='7']").click()
+    browser.find_element(By.CSS_SELECTOR, "button[value='+']").click()
+    browser.find_element(By.CSS_SELECTOR, "button[value='8']").click()
+    browser.find_element(By.CSS_SELECTOR, "button[value='='").click()
 
 
-        result = self.driver.find_element(By.CSS_SELECTOR, "#result").text
-        self.assertEqual(result, "15", f"Expected result to be 15, but got {result}")
+    result_element = WebDriverWait(browser, 60).until(
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#result"))
+    )
+
+
+    result = result_element.text
+    assert result == "15", f"Expected result to be 15, but got {result}"
 
     def tearDown(self):
-
         self.driver.quit()
 
 

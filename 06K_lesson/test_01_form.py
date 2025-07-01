@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.fixture
 def browser():
-    driver = webdriver.Chrome()
+    driver = webdriver. Edge()
     yield driver
     driver.quit()
 

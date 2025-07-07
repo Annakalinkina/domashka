@@ -5,7 +5,6 @@ from main_page import MainPage
 from cart_page import CartPage
 from checkout_page import CheckoutPage
 
-@pytest.fixture(scope="module")
 def browser():
     driver = webdriver.Chrome()
     yield driver

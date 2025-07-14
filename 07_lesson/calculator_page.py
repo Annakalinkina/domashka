@@ -1,4 +1,8 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
 
 
 class CalculatorPage:
@@ -14,8 +18,6 @@ class CalculatorPage:
         button = self.driver.find_element(By.XPATH, f"//span[text()='{button_text}']")
         button.click()
 
-    # ActionChains(self.driver).move_to_element(button).click().perform()
+    def wait_until_result_is_displayed(self, timeout: int):
+        WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.XPATH, '//div[text()="15"]')))
 
-    def get_result(self):
-        result = self.driver.find_element(By.CSS_SELECTOR, ".screen")
-        return result.text

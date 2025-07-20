@@ -1,29 +1,24 @@
-import pytest
-from selenium import webdriver
-from login_page import LoginPage
-from main_page import MainPage
-from cart_page import CartPage
-from checkout_page import CheckoutPage
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-@pytest.fixture(scope="module")
-def browser():
-    driver = webdriver.Chrome()
-    yield driver
-    driver.quit()
+class CalculatorPage:
+    def __init__(self, driver):
+        self.driver = driver
 
-def test_saucedemo(browser):
-    browser.get("https://www.saucedemo.com/")
-    login_page=LoginPage(browser)
-    login_page.login(username="standard_user", password="secret_sauce")
-    main_page = MainPage(browser)
-    products = ["Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt", "Sauce Labs Onesie"]
-    for product in products:
-        main_page.add_to_cart(product)
-    main_page.go_to_cart()
-    cart_page = CartPage(browser)
-    cart_page.checkout()
-    checkout_page = CheckoutPage(browser)
-    checkout_page.fill_out_form("John", "Doe", "12345")
-    total_amount = checkout_page.get_total_amount()
-    assert total_amount == "Total: $58.29", f"Expected total to be 'Total: $58.29', but got '{total_amount}'"
+    def enter_delay(self, delay):
+        delay_input = self.driver.find_element(By.ID, "delay")
+        delay_input.clear()
+        delay_input.send_keys(str(delay))
+
+    def click_button(self, button_text):
+        button = self.driver.find_element(By.XPATH, f"//button[text()='{button_text}']")
+        button.click()
+
+    def wait_until_result_is_displayed(self, timeout):
+        result_field = self.driver.find_element(By.CSS_SELECTOR, ".top input#result")
+        WebDriverWait(self.driver, timeout).until(
+            EC.text_to_be_present_in_element_value((By.ID, "result"), "15")
+        )
+        assert result_field.get_attribute("value") == "15"
 

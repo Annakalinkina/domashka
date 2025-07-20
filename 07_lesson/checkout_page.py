@@ -20,4 +20,3 @@ class CheckoutPage:
     def get_total_amount(self):
         total_amount = self.driver.find_element( By.CLASS_NAME, "summary_total_label")
         return total_amount.text
-

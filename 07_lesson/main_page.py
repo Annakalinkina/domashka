@@ -12,3 +12,4 @@ class MainPage:
 
     def go_to_cart(self):
         self.browser.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+

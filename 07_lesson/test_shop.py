@@ -26,3 +26,4 @@ def test_saucedemo(browser):
     checkout_page.fill_out_form("John", "Doe", "12345")
     total_amount = checkout_page.get_total_amount()
     assert total_amount == "Total: $58.29", f"Expected total to be 'Total: $58.29', but got '{total_amount}'"
+

@@ -9,3 +9,4 @@ class CartPage:
     def checkout(self):
         WebDriverWait(self.browser, 10).until(EC.presence_of_element_located((By.ID, "checkout"))).click()
 
+

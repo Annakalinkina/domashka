@@ -1,17 +1,17 @@
-
 import pytest
 from selenium import webdriver
 from calculator_page import CalculatorPage
+from webdriver_manager.firefox import GeckoDriverManager
 
 @pytest.fixture(scope="module")
 def browser():
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     yield driver
     driver.quit()
 
 def test_calculator(browser):
     timeout = 45
-    browser.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
+    browser.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html ")
     calculator_page = CalculatorPage(browser)
     calculator_page.enter_delay(timeout)
     calculator_page.click_button('7')
